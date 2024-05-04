@@ -2,7 +2,7 @@
 // adicione a classe ativo ao item clicado e remova dos
 // demais itens caso eles possuam a mesma. Previna
 // o comportamento padrão desses links
-const linksInternos = document.querySelectorAll('a[href^="#"]');
+const linksInternos = document.querySelectorAll('a[href^="#"]')
 
 function handleLink(event) {
   event.preventDefault();
@@ -36,7 +36,7 @@ function handleElemento(event) {
 
 function handleClickT(event) {
   console.log(event.key);
-  if(event.key === 't') {
+  if(event.key = 't') {
     document.documentElement.classList.toggle('textomaior');
   }
 }

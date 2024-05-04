@@ -1,21 +1,18 @@
 // Duplique o menu e adicione ele em copy
-const menu = document.querySelector('.menu');
-const copy = document.querySelector('.copy');
+const menu = document.querySelector(".menu");
+const copy = document.querySelector(".copy");
 
 const cloneMenu = menu.cloneNode(true);
 copy.appendChild(cloneMenu);
 
 // Selecione o primeiro DT da dl de Faq
-const faq = document.querySelector('.faq');
-const primeiroDt = faq.querySelector('dt');
-
+const primeiroDt = document.querySelector("dt").innerText;
 
 // Selecione o DD referente ao primeiro DT
-const proximoDD = primeiroDt.nextElementSibling;
-
-console.log(proximoDD);
+const primeiroDd = document.querySelector("dd").innerText;
 
 // Substitua o conteúdo html de .faq pelo de .animais
-const animais = document.querySelector('.animais');
+const faq1 = document.querySelector(".faq");
+const animais = document.querySelector(".animais");
 
-faq.innerHTML = animais.innerHTML;
+faq1.innerHTML = animais.innerHTML;
